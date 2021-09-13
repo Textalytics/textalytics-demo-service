@@ -454,7 +454,7 @@ full = ["aiofiles", "graphene", "itsdangerous", "jinja2", "python-multipart", "p
 
 [[package]]
 name = "textalytics-cloud-api-adapters"
-version = "0.1.1"
+version = "0.1.3"
 description = "textalytics adapters for various cloud apis"
 category = "main"
 optional = false
@@ -465,7 +465,8 @@ azure-ai-textanalytics = ">=5.1.0,<6.0.0"
 boto3 = ">=1.18.40,<2.0.0"
 google-cloud-language = ">=2.2.2,<3.0.0"
 pydantic = ">=1.8.2,<2.0.0"
-textalytics-core = ">=0.1.0,<0.2.0"
+textalytics-core = ">=0.1.1,<0.2.0"
+textalytics-python-client = ">=0.1.0,<0.2.0"
 
 [[package]]
 name = "textalytics-core"
@@ -477,6 +478,18 @@ python-versions = ">=3.9,<4.0"
 
 [package.dependencies]
 pydantic = ">=1.8.2,<2.0.0"
+
+[[package]]
+name = "textalytics-python-client"
+version = "0.1.0"
+description = "python client to interface with textalytics hosted nlp service"
+category = "main"
+optional = false
+python-versions = ">=3.9,<4.0"
+
+[package.dependencies]
+requests = ">=2.26.0,<3.0.0"
+textalytics-core = ">=0.1.1,<0.2.0"
 
 [[package]]
 name = "typing-extensions"
@@ -518,7 +531,7 @@ standard = ["websockets (>=9.1)", "httptools (>=0.2.0,<0.3.0)", "watchgod (>=0.6
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "ca749e527a9e4e04c7e639aa7a47b41e056d8e786cc1728366dae998536fd310"
+content-hash = "20ff09bdc68e0c1a76bd11cc8c6497e120f7a58aae63c88bc3bd46c4c3e12038"
 
 [metadata.files]
 asgiref = [
@@ -780,12 +793,16 @@ starlette = [
     {file = "starlette-0.14.2.tar.gz", hash = "sha256:7d49f4a27f8742262ef1470608c59ddbc66baf37c148e938c7038e6bc7a998aa"},
 ]
 textalytics-cloud-api-adapters = [
-    {file = "textalytics-cloud-api-adapters-0.1.1.tar.gz", hash = "sha256:70360db41d5d9ecc17227cc513bc718c7927cdb6a3a89a56437881d056f30a3f"},
-    {file = "textalytics_cloud_api_adapters-0.1.1-py3-none-any.whl", hash = "sha256:87d8f9e0f49640bbb9cd368ff65ea5f817a57cbacc790cd52c4cb94849f36220"},
+    {file = "textalytics-cloud-api-adapters-0.1.3.tar.gz", hash = "sha256:f7dbcf99f27ddb631b139a922533caa5ead67343833f75e2c0779ce0ce9eb9b5"},
+    {file = "textalytics_cloud_api_adapters-0.1.3-py3-none-any.whl", hash = "sha256:10cdefd2dd8ba93c19e9661aad8571856fdc6abcb337bb6b95d3721cd4e5ab0e"},
 ]
 textalytics-core = [
     {file = "textalytics-core-0.1.1.tar.gz", hash = "sha256:e8b463cf3de02f723ab45803b8de1451663db75a5d8b1b14370d6ddab6fc8f12"},
     {file = "textalytics_core-0.1.1-py3-none-any.whl", hash = "sha256:3aee0a5c0f896676caf507ef3ae5df99e02cd68c2fdc44d52d3fb43237008421"},
+]
+textalytics-python-client = [
+    {file = "textalytics-python-client-0.1.0.tar.gz", hash = "sha256:d9b14bc312a9247e12cefd4c642d4c519a99d83324338e9ad8291127f2cf68f8"},
+    {file = "textalytics_python_client-0.1.0-py3-none-any.whl", hash = "sha256:9400eab677091ed467cdf9e2cc4bac25c933d45ff315548178328ef3b3782a61"},
 ]
 typing-extensions = [
     {file = "typing_extensions-3.10.0.2-py2-none-any.whl", hash = "sha256:d8226d10bc02a29bcc81df19a26e56a9647f8b0a6d4a83924139f4a8b01f17b7"},
