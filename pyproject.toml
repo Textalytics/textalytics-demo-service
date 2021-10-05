@@ -1,17 +1,17 @@
 [tool.poetry]
-name = "textalytics-service"
-version = "0.1.0"
+name = "textalytics-demo-service"
+version = "0.1.1"
 description = "textalytics capabilities as a service"
 authors = ["Manoj Bharadwaj <manoj@cloudcosmos.tech>"]
 license = "MIT"
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.8"
 pydantic = "^1.8.2"
 fastapi = "^0.68.1"
 uvicorn = "^0.15.0"
-textalytics-core = "^0.1.1"
-textalytics-cloud-api-adapters = "^0.1.3"
+textalytics-core = "^0.1.2"
+textalytics-cloud-api-adapters = "^0.1.4"
 
 [tool.poetry.dev-dependencies]
 
